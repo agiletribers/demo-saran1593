@@ -15,8 +15,6 @@ def cosine(a,b):
 text1=embedding("car")
 text2=embedding("fruit")
 text3=embedding("apple")
-
-
 output=cosine(text1,text2)
 output2=cosine(text2,text3)
 print(output)
