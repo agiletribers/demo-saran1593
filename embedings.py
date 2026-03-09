@@ -8,14 +8,13 @@ def embedding(text):
     return result
 print(embedding("world"))
 
-def cosine(a,b):
+def cosine1(a,b):
     return np.dot(a,b) / (np.linalg.norm(a)*np.linalg.norm(b))
-
 
 text1=embedding("car")
 text2=embedding("fruit")
 text3=embedding("apple")
-output=cosine(text1,text2)
-output2=cosine(text2,text3)
+output=cosine1(text1,text2)
+output2=cosine1(text2,text3)
 print(output)
 print(output2)
